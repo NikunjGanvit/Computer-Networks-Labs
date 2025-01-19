@@ -3,22 +3,7 @@
 int main(){
 
     
-    printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");printf("Hello nikunj");
-    printf("Hello nikunj");
-    printf("Hello nikunj");
+    printf("Hello nighgghgghhgghgjkunj");
+
     return 0;
 }
