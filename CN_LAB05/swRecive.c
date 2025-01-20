@@ -13,6 +13,8 @@
 #define DATA_SIZE 8
 #define MODULO 256
 
+int ind = 0;
+
 
 // Calculate the Check Sum
 unsigned char calculate_checksum(const char * frame,int length)
@@ -26,6 +28,15 @@ unsigned char calculate_checksum(const char * frame,int length)
   return checksum % MODULO;
 }
 
+// create Frame 
+void createData(const char * str, char * data)
+{
+  for(int i= ind,j= 0;i < DATA_SIZE;i++,j++)
+  {
+    data[j] = str[i];
+  }
+  ind = ind + DATA_SIZE;
+}
 
 int main()
 {
@@ -55,8 +66,13 @@ int main()
 
   // printf("%s",str);
 
-  // creating the Fram from data
+  // creating the Frame from data
+
+  createData(str,data);
+
+  
     
+  // gcc swRecive.c rs232.c -Wall -Wextra -o2 -o test_rx
 
   
 
