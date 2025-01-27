@@ -1,0 +1,2 @@
+printf("Received frame (Before deframing): %s\n", buf);
+printf("Received frame (After deframing)A: %s\n", mes);
