@@ -1,0 +1,15 @@
+Learn About Wireshark and Analyz IP Header
+
+ping to friend src dest add in ip in both window 
+
+verfiy protocolfield 
+
+set ttl by pinging to friend or google 
+
+verify record route 28
+
+checksum (Calculate by taking any packet)
+
+
+total Length (-s )
+

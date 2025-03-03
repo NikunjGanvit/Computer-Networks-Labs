@@ -1,0 +1,58 @@
+1. Overview of Wireshark in the Image
+
+Wireshark is a network protocol analyzer that captures and inspects packets. In this image, it is being used to capture live network traffic on the eno1 network interface.
+
+
+2. Main Sections of Wireshark
+
+The interface in the image consists of:
+
+    Menu Bar (topmost section): Options for file operations, capturing, analyzing, and filtering packets.
+    Toolbar (below menu bar): Quick access buttons for starting/stopping capture, applying filters, and navigating packets.
+    Packet List Pane (top section): Displays all captured packets with columns such as No., Time, Source, Destination, Protocol, Length, and Info.
+    Packet Details Pane (middle section): Shows the selected packet's details, broken down by protocol layers.
+    Packet Bytes Pane (bottom section): Displays the raw packet data in hexadecimal and ASCII format.
+
+3. Packet List Pane Explanation
+
+This section displays a list of captured packets. The following columns are visible:
+
+    No.: Packet number in the capture session.
+    Time: Timestamp of when the packet was captured.
+    Source: The sender's IP or MAC address.
+    Destination: The receiver's IP or MAC address.
+    Protocol: Indicates the protocol (e.g., TCP, MDNS, STP).
+    Length: Size of the packet in bytes.
+    Info: Additional details about the packet (e.g., flags, sequence numbers).
+
+4. Selected Packet Analysis
+
+Packet No. 1993 is selected, and its details are displayed below:
+
+    Ethernet II:
+        Source MAC: Micro-St_60:75:65 (00:d8:61:60:75:65)
+        Destination MAC: Netgear_68:a2:7c (20:e5:2a:68:a2:7c)
+    IPv4 Header:
+        Source IP: 192.168.32.26
+        Destination IP: 192.168.1.100
+    TCP Header:
+        Source Port: 46310
+        Destination Port: 8090 (commonly used for web applications)
+        Sequence Number: 0
+        Length: 0 (Indicates this might be a control packet like SYN, FIN, or ACK)
+
+5. Observed Protocols
+
+Various network protocols are present in the capture:
+
+    STP (Spanning Tree Protocol): Used for preventing loops in a network.
+    MDNS (Multicast DNS): Used for resolving hostnames in local networks.
+    TCP (Transmission Control Protocol): Used for reliable data transmission between devices.
+    RST, FIN, ACK Flags in TCP: Indicate connection termination between devices.
+
+6. Packet Bytes Pane
+
+Displays the raw data of the packet in hexadecimal and ASCII. The breakdown helps in low-level network analysis, debugging issues, or security auditing.
+
+
+ABOVE Data for 1.png 
